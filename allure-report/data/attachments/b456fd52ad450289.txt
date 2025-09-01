@@ -1,0 +1,83 @@
+Error during login test: ExpectError: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /inventory.html/
+Received string:  "https://www.saucedemo.com/"
+Timeout: 5000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 5000ms
+    9 × unexpected value "https://www.saucedemo.com/"
+
+    at D:\Projects\playwright_framework\tests\login.spec.ts:15:24 {
+  matcherResult: {
+    name: 'toHaveURL',
+    expected: /inventory.html/,
+    message: '\x1B[2mexpect(\x1B[22m\x1B[31mpage\x1B[39m\x1B[2m).\x1B[22mtoHaveURL\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m)\x1B[22m failed\n' +
+      '\n' +
+      'Expected pattern: \x1B[32m/inventory.html/\x1B[39m\n' +
+      'Received string:  \x1B[31m"https://www.saucedemo.com/"\x1B[39m\n' +
+      'Timeout: 5000ms\n' +
+      '\n' +
+      'Call log:\n' +
+      '\x1B[2m  - Expect "toHaveURL" with timeout 5000ms\x1B[22m\n' +
+      '\x1B[2m    9 × unexpected value "https://www.saucedemo.com/"\x1B[22m\n',
+    pass: false,
+    actual: 'https://www.saucedemo.com/',
+    log: [
+      '  - Expect "toHaveURL" with timeout 5000ms',
+      '    9 × unexpected value "https://www.saucedemo.com/"'
+    ],
+    timeout: 5000
+  },
+  [Symbol(step)]: {
+    category: 'expect',
+    apiName: 'expect.toHaveURL',
+    title: 'Expect "toHaveURL"',
+    params: { expected: /inventory.html/ },
+    infectParentStepsWithError: undefined,
+    stepId: 'expect@31',
+    group: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'D:\\Projects\\playwright_framework\\tests\\login.spec.ts',
+      line: 15,
+      column: 24
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@31',
+      _title: 'Expect "toHaveURL"',
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    recoverFromStepError: [AsyncFunction: recoverFromStepError],
+    complete: [Function: complete],
+    endWallTime: 1756706072722,
+    error: {
+      message: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mpage\x1B[39m\x1B[2m).\x1B[22mtoHaveURL\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m)\x1B[22m failed\n' +
+        '\n' +
+        'Expected pattern: \x1B[32m/inventory.html/\x1B[39m\n' +
+        'Received string:  \x1B[31m"https://www.saucedemo.com/"\x1B[39m\n' +
+        'Timeout: 5000ms\n' +
+        '\n' +
+        'Call log:\n' +
+        '\x1B[2m  - Expect "toHaveURL" with timeout 5000ms\x1B[22m\n' +
+        '\x1B[2m    9 × unexpected value "https://www.saucedemo.com/"\x1B[22m\n',
+      stack: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mpage\x1B[39m\x1B[2m).\x1B[22mtoHaveURL\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m)\x1B[22m failed\n' +
+        '\n' +
+        'Expected pattern: \x1B[32m/inventory.html/\x1B[39m\n' +
+        'Received string:  \x1B[31m"https://www.saucedemo.com/"\x1B[39m\n' +
+        'Timeout: 5000ms\n' +
+        '\n' +
+        'Call log:\n' +
+        '\x1B[2m  - Expect "toHaveURL" with timeout 5000ms\x1B[22m\n' +
+        '\x1B[2m    9 × unexpected value "https://www.saucedemo.com/"\x1B[22m\n' +
+        '\n' +
+        '    at D:\\Projects\\playwright_framework\\tests\\login.spec.ts:15:24',
+      cause: undefined
+    }
+  }
+}
