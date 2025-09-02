@@ -17,7 +17,8 @@ test("Complete checkout flow", async({page})=>{
     await loginPage.goto('/');
     await loginPage.login(process.env.USERNAME!, process.env.PASSWORD!);
 
-    await inventoryPage.addProductToCart("Sauce Labs Backpack");
+    await inventoryPage.addProductToCart(data.product.backpack);
+    await inventoryPage.addProductToCart(data.product.bicycle);
     await cartPage.goto();
     await cartPage.checkout();
 

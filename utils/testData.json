@@ -1,7 +1,9 @@
 {
     "baseUrl": "https://www.saucedemo.com",
-    "username": "standard_user",
-    "password": "secret_sauce",
+    "product": {
+      "backpack" :"Sauce Labs Backpack",
+      "bicycle" :"Sauce Labs Bike Light"
+    },
     "checkout": {
       "firstName": "QA",
       "lastName": "QA",

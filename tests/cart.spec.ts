@@ -11,8 +11,8 @@ test("Add two products to cart and verify count", async({page}) =>{
     await loginPage.goto('/');
     await loginPage.login(process.env.USERNAME!, process.env.PASSWORD!);
 
-    await inventoryPage.addProductToCart("Sauce Labs Backpack");
-    await inventoryPage.addProductToCart("Sauce Labs Bike Light");
+    await inventoryPage.addProductToCart(data.product.backpack);
+    await inventoryPage.addProductToCart(data.product.bicycle);
 
     expect(await inventoryPage.getCartCount()).toBe(2);
 })
