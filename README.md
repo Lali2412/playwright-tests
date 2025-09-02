@@ -46,6 +46,12 @@ npm run test
 # Generate and open Allure report from existing results
 npm run allure:report
 
+#Run Tests with HTML Reporting
+npx playwright test --reporter=html
+
+#Open the HTML Report
+npx playwright show-report
+
 
 ---
 
