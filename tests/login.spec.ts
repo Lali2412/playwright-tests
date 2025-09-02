@@ -9,8 +9,7 @@ test("Login with valid credentials", async ({page})=>{
     try{
 
     await loginPage.goto(data.baseUrl);
-    console.log("USERNAME:", process.env.USERNAME!);
-    console.log("PASSWORD:", process.env.PASSWORD!);
+   
     await loginPage.login(process.env.USERNAME!, process.env.PASSWORD!);
     await expect(page).toHaveURL(/inventory.html/);
     } catch (error){
