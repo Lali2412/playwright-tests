@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 import {LoginPage} from "../pages/LoginPage";
 import * as data from "../utils/testData.json";
-import * as dotenv from 'dotenv';
+
 
 test("Login with valid credentials", async ({page})=>{
     const loginPage = new LoginPage(page);

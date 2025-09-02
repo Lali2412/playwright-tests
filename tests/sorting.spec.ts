@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "../pages/LoginPage";
 import { InventoryPage } from "../pages/InventoryPage";
-import * as data from "../utils/testData.json";
+
 
 test("Sort products by Price Low to High", async({page})=>{
 
